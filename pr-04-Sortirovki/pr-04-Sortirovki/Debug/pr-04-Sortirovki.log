@@ -1,0 +1,6 @@
+﻿  Source1_max.cpp
+C:\Visual_app\pr-04-Sortirovki\pr-04-Sortirovki\functions.h(41,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\pr-04-Sortirovki\pr-04-Sortirovki\functions.h(57,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\pr-04-Sortirovki\pr-04-Sortirovki\functions.h(64,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\pr-04-Sortirovki\pr-04-Sortirovki\functions.h(65,23): warning C4018:  <: несоответствие типов со знаком и без знака
+  pr-04-Sortirovki.vcxproj -> C:\Visual_app\pr-04-Sortirovki\Debug\pr-04-Sortirovki.exe

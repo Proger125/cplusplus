@@ -1,0 +1,4 @@
+﻿  Source3_delete_points.cpp
+C:\Visual_app\up-03-for_while\task_3\Source3_delete_points.cpp(15,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\up-03-for_while\task_3\Source3_delete_points.cpp(18,14): warning C4018:  <: несоответствие типов со знаком и без знака
+  task_3.vcxproj -> C:\Visual_app\up-03-for_while\Debug\task_3.exe

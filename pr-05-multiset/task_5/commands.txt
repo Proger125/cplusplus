@@ -1,0 +1,4 @@
+add 100
+delete 5
+find_min
+is_exist 5

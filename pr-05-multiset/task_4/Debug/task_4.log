@@ -1,0 +1,4 @@
+﻿  Source_4.cpp
+C:\Visual_app\pr-05-multiset\task_4\Source_4.cpp(17,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\pr-05-multiset\task_4\Source_4.cpp(19,23): warning C4018:  <: несоответствие типов со знаком и без знака
+  task_4.vcxproj -> C:\Visual_app\pr-05-multiset\Debug\task_4.exe

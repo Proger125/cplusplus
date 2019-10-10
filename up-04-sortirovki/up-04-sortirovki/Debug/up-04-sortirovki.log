@@ -1,0 +1,43 @@
+﻿  Main_file.cpp
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Input.h(5,10): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(14,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(14): message :  выполняется компиляция ссылки на экземпляр шаблон функции "void InsertSort<int>(std::vector<int,std::allocator<_Ty>> &)"
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(14): message :         with
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(14): message :         [
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(14): message :             _Ty=int
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(14): message :         ]
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(25,26): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(18): message :  выполняется компиляция ссылки на экземпляр шаблон функции "void ShellSort<int>(std::vector<int,std::allocator<_Ty>> &)"
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(18): message :         with
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(18): message :         [
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(18): message :             _Ty=int
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(18): message :         ]
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(39,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(22): message :  выполняется компиляция ссылки на экземпляр шаблон функции "void Bubble_sort<int>(std::vector<int,std::allocator<_Ty>> &)"
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(22): message :         with
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(22): message :         [
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(22): message :             _Ty=int
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(22): message :         ]
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(40,23): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(53,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(26): message :  выполняется компиляция ссылки на экземпляр шаблон функции "void OddEvenSort<int>(std::vector<int,std::allocator<_Ty>> &)"
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(26): message :         with
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(26): message :         [
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(26): message :             _Ty=int
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(26): message :         ]
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(54,37): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(97,23): warning C4244:  инициализация: преобразование "const double" в "int", возможна потеря данных
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(34): message :  выполняется компиляция ссылки на экземпляр шаблон функции "void CombSort<int>(std::vector<int,std::allocator<_Ty>> &)"
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(34): message :         with
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(34): message :         [
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(34): message :             _Ty=int
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(34): message :         ]
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(97,32): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(111,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(38): message :  выполняется компиляция ссылки на экземпляр шаблон функции "void ChooseSort<int>(std::vector<int,std::allocator<_Ty>> &)"
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(38): message :         with
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(38): message :         [
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(38): message :             _Ty=int
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Main_file.cpp(38): message :         ]
+C:\Visual_app\up-04-sortirovki\up-04-sortirovki\Sort.h(114,27): warning C4018:  <: несоответствие типов со знаком и без знака
+  up-04-sortirovki.vcxproj -> C:\Visual_app\up-04-sortirovki\Debug\up-04-sortirovki.exe
