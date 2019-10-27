@@ -1,7 +1,10 @@
 #include "Add.h"
 
 int main() {
-  vector<Country> v;
+  WorldPopulation World;
+  World.ReadWorld();
+  World.CalcWorldPopulation();
+  World.WriteYearPopulation();
   system("pause");
   return 0;
 }
