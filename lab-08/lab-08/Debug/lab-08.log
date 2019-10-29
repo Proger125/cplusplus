@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\lab-08\lab-08\Main.cpp(10,28): error C2065:  argc: необъявленный идентификатор
+  Test.cpp
+  Создание кода...
+C:\Users\Lenovo\Documents\GitHub\cplusplus\lab-08\lab-08\Main.cpp(10,34): error C2065:  argv: необъявленный идентификатор
