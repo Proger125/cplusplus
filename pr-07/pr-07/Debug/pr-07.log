@@ -1,2 +1,7 @@
 ﻿  Main.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Functions.h(42,1): warning C4812:  устаревший стиль объявления: используйте "Program<T>::Program" как альтернативу
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Functions.h(42,1): warning C4812:  устаревший стиль объявления: используйте "Program<int>::Program" как альтернативу
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Functions.h(42): message :  во время компиляции функции-члена класс шаблон "Program<int>::Program(RationalNumber<int>,RationalNumber<int>)"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Main.cpp(7): message :  выполняется компиляция ссылки на экземпляр шаблон функции "Program<int>::Program(RationalNumber<int>,RationalNumber<int>)"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Main.cpp(7): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "Program<int>"
   pr-07.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\Debug\pr-07.exe

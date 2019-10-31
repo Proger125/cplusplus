@@ -1,6 +1,7 @@
 #pragma once
 #include <cmath>
 #include <iostream>
+#include <assert.h>
 
 using namespace std;
 
@@ -30,6 +31,42 @@ class RationalNumber {
   RationalNumber operator++();
   RationalNumber operator--();
 };
+template <class T>
+class Program {
+ public:
+  RationalNumber<T> first, second;
+  Program(RationalNumber<T> f, RationalNumber<T> s);
+  void ShowThePower();
+};
+template <typename T>
+Program<T>::Program<T>(RationalNumber<T> f, RationalNumber<T> s) {
+  first = f;
+  second = s;
+}
+template <typename T>
+void Program<T>::ShowThePower() {
+  RationalNumber<T> result;
+  result = first + second;
+  cout << "The sum of your Rational Numbers = " << result << endl;
+  result = first - second;
+  cout << "The substraction of your Rational Numbers = " << result << endl;
+  result = first * second;
+  cout << "The multiplication of your Rational Numbers = " << result << endl;
+  result = first / second;
+  cout << "The division of your Rational Numbers = " << result << endl;
+  if (first != second && first > second) {
+    cout << "The numbers are not equal and the first is bigger than second"
+         << endl;
+  } else if (first != second && first < second) {
+    cout << "The numbers are not equal and the second is bigger than first" << endl;
+  } else if (first == second) {
+    cout << "The numbers are equal" << endl;
+  }
+  result = ++first;
+  cout << "The increment of first number = " << result << endl;
+  result = --second;
+  cout << "The dicrement of second number = " << result << endl;
+}
 template <typename T>
 RationalNumber<T>::RationalNumber() {
   numerator = 0;
@@ -147,6 +184,7 @@ void InputNumber(RationalNumber<T> &num) {
   cin >> n;
   cout << "Enter the denominator = ";
   cin >> d;
+  assert(d != 0 && "Your denominator = 0");
   RationalNumber<T> item(n, d);
   item = +item;
   num = item;
