@@ -13,21 +13,21 @@ class RationalNumber {
   RationalNumber(T num, T denom);
   RationalNumber operator+() const;
   RationalNumber operator-() const;
-  RationalNumber operator+=(RationalNumber<T> &num);
-  RationalNumber operator-=(RationalNumber<T> &num);
-  RationalNumber operator*=(RationalNumber<T> &num);
-  RationalNumber operator/=(RationalNumber<T> &num);
+  RationalNumber operator+=(RationalNumber<T> num);
+  RationalNumber operator-=(RationalNumber<T> num);
+  RationalNumber operator*=(RationalNumber<T> num);
+  RationalNumber operator/=(RationalNumber<T> num);
   ostream operator<<(ostream &fout);
-  RationalNumber operator+(RationalNumber<T> &num);
-  RationalNumber operator-(RationalNumber<T> &num);
-  RationalNumber operator*(RationalNumber<T> &num);
-  RationalNumber operator/(RationalNumber<T> &num);
-  bool operator==(RationalNumber<T> &num);
-  bool operator!=(RationalNumber<T> &num);
-  bool operator>(RationalNumber<T> &num);
-  bool operator<(RationalNumber<T> &num);
-  bool operator>=(RationalNumber<T> &num);
-  bool operator<=(RationalNumber<T> &num);
+  RationalNumber operator+(RationalNumber<T> num);
+  RationalNumber operator-(RationalNumber<T> num);
+  RationalNumber operator*(RationalNumber<T> num);
+  RationalNumber operator/(RationalNumber<T> num);
+  bool operator==(RationalNumber<T> num);
+  bool operator!=(RationalNumber<T> num);
+  bool operator>(RationalNumber<T> num);
+  bool operator<(RationalNumber<T> num);
+  bool operator>=(RationalNumber<T> num);
+  bool operator<=(RationalNumber<T> num);
   RationalNumber operator++();
   RationalNumber operator--();
 };
@@ -42,6 +42,20 @@ template <typename T>
 Program<T>::Program<T>(RationalNumber<T> f, RationalNumber<T> s) {
   first = f;
   second = s;
+}
+template <typename T>
+T gcd(T a, T b) {
+  if (a > b) {
+    if (b == 0)
+      return a;
+    else
+      return gcd(b, a % b);
+  } else {
+    if (a == 0)
+      return b;
+    else
+      return gcd(a, b % a);
+  }
 }
 template <typename T>
 void Program<T>::ShowThePower() {
@@ -79,17 +93,9 @@ RationalNumber<T>::RationalNumber(T num, T denom) {
 }
 template <typename T>
 RationalNumber<T> RationalNumber<T>::operator+() const {
-  T i = this->denominator;
-  T num = this->numerator;
-  T denom = this->denominator;
-  while (i >= 2) {
-    if (denom % i == 0 && num % i == 0) {
-      denom /= i;
-      num /= i;
-    }
-    i--;
-  }
-  return RationalNumber(num, denom);
+  T nod = gcd(this->numerator, this->denominator);
+  assert(this->denominator != 0 && "Your denominator = 0");
+  return RationalNumber(this->numerator / nod, this->denominator / nod);
 }
 template <typename T>
 RationalNumber<T> RationalNumber<T>::operator-() const {
@@ -97,7 +103,7 @@ RationalNumber<T> RationalNumber<T>::operator-() const {
   return RationalNumber(num, this->denominator);
 }
 template <typename T>
-RationalNumber<T> RationalNumber<T>::operator+=(RationalNumber<T> &num) {
+RationalNumber<T> RationalNumber<T>::operator+=(RationalNumber<T> num) {
   RationalNumber<T> result;
   result.numerator =
       this->numerator * num.denominator + num.numerator * this->denominator;
@@ -108,7 +114,7 @@ RationalNumber<T> RationalNumber<T>::operator+=(RationalNumber<T> &num) {
   return result;
 }
 template <typename T>
-RationalNumber<T> RationalNumber<T>::operator-=(RationalNumber<T> &num) {
+RationalNumber<T> RationalNumber<T>::operator-=(RationalNumber<T> num) {
   RationalNumber<T> result;
   result.numerator =
       this->numerator * num.denominator - num.numerator * this->denominator;
@@ -119,7 +125,7 @@ RationalNumber<T> RationalNumber<T>::operator-=(RationalNumber<T> &num) {
   return result;
 }
 template <typename T>
-RationalNumber<T> RationalNumber<T>::operator*=(RationalNumber<T> &num) {
+RationalNumber<T> RationalNumber<T>::operator*=(RationalNumber<T> num) {
   RationalNumber result;
   result.numerator = this->numerator * num.numerator;
   result.denominator = this->denominator * num.denominator;
@@ -129,7 +135,7 @@ RationalNumber<T> RationalNumber<T>::operator*=(RationalNumber<T> &num) {
   return result;
 }
 template <typename T>
-RationalNumber<T> RationalNumber<T>::operator/=(RationalNumber<T> &num) {
+RationalNumber<T> RationalNumber<T>::operator/=(RationalNumber<T> num) {
   RationalNumber result;
   result.numerator = this->numerator * num.denominator;
   result.denominator = this->denominator * num.numerator;
@@ -144,7 +150,7 @@ ostream &operator<<(ostream &fout, RationalNumber<T> &num) {
   return fout;
 }
 template <typename T>
-RationalNumber<T> RationalNumber<T>::operator+(RationalNumber<T> &num) {
+RationalNumber<T> RationalNumber<T>::operator+(RationalNumber<T> num) {
   RationalNumber result;
   result.numerator =
       this->numerator * num.denominator + num.numerator * this->denominator;
@@ -153,7 +159,7 @@ RationalNumber<T> RationalNumber<T>::operator+(RationalNumber<T> &num) {
   return result;
 }
 template <typename T>
-RationalNumber<T> RationalNumber<T>::operator-(RationalNumber<T> &num) {
+RationalNumber<T> RationalNumber<T>::operator-(RationalNumber<T> num) {
   RationalNumber result;
   result.numerator =
       this->numerator * num.denominator - num.numerator * this->denominator;
@@ -162,7 +168,7 @@ RationalNumber<T> RationalNumber<T>::operator-(RationalNumber<T> &num) {
   return result;
 }
 template <typename T>
-RationalNumber<T> RationalNumber<T>::operator*(RationalNumber<T> &num) {
+RationalNumber<T> RationalNumber<T>::operator*(RationalNumber<T> num) {
   RationalNumber result;
   result.numerator = this->numerator * num.numerator;
   result.denominator = this->denominator * num.denominator;
@@ -170,7 +176,7 @@ RationalNumber<T> RationalNumber<T>::operator*(RationalNumber<T> &num) {
   return result;
 }
 template <typename T>
-RationalNumber<T> RationalNumber<T>::operator/(RationalNumber<T> &num) {
+RationalNumber<T> RationalNumber<T>::operator/(RationalNumber<T> num) {
   RationalNumber result;
   result.numerator = this->numerator * num.denominator;
   result.denominator = this->denominator * num.numerator;
@@ -190,7 +196,7 @@ void InputNumber(RationalNumber<T> &num) {
   num = item;
 }
 template <typename T>
-bool RationalNumber<T>::operator==(RationalNumber<T> &num) {
+bool RationalNumber<T>::operator==(RationalNumber<T> num) {
   if (this->denominator == num.denominator && this->numerator == num.numerator) {
     return 1;
   } else {
@@ -198,7 +204,7 @@ bool RationalNumber<T>::operator==(RationalNumber<T> &num) {
   }
 }
 template <typename T>
-bool RationalNumber<T>::operator!=(RationalNumber<T> &num) {
+bool RationalNumber<T>::operator!=(RationalNumber<T> num) {
   if (this->denominator == num.denominator &&
       this->numerator == num.numerator) {
     return 0;
@@ -207,42 +213,44 @@ bool RationalNumber<T>::operator!=(RationalNumber<T> &num) {
   }
 }
 template<typename T>
-bool RationalNumber<T>::operator>(RationalNumber<T> &num) {
-  this->numerator =
-      this->numerator * num.denominator;
-  num.numerator =
-      num.numerator * this->denominator;
-  if (this->numerator > num.numerator) {
+bool RationalNumber<T>::operator>(RationalNumber<T> num) {
+  T f, s;
+  f = this->numerator * num.denominator;
+  s = num.numerator * this->denominator;
+  if (f > s) {
     return 1;
   } else {
     return 0;
   }
 }
 template <typename T>
-bool RationalNumber<T>::operator<(RationalNumber<T> &num) {
-  this->numerator = this->numerator * num.denominator;
-  num.numerator = num.numerator * this->denominator;
-  if (this->numerator < num.numerator) {
+bool RationalNumber<T>::operator<(RationalNumber<T> num) {
+  T f, s;
+  f = this->numerator * num.denominator;
+  s = num.numerator * this->denominator;
+  if (f < s) {
     return 1;
   } else {
     return 0;
   }
 }
 template <typename T>
-bool RationalNumber<T>::operator>=(RationalNumber<T> &num) {
-  this->numerator = this->numerator * num.denominator;
-  num.numerator = num.numerator * this->denominator;
-  if (this->numerator >= num.numerator) {
+bool RationalNumber<T>::operator>=(RationalNumber<T> num) {
+  T f, s;
+  f = this->numerator * num.denominator;
+  s = num.numerator * this->denominator;
+  if (f >= s) {
     return 1;
   } else {
     return 0;
   }
 }
 template <typename T>
-bool RationalNumber<T>::operator<=(RationalNumber<T> &num) {
-  this->numerator = this->numerator * num.denominator;
-  num.numerator = num.numerator * this->denominator;
-  if (this->numerator <= num.numerator) {
+bool RationalNumber<T>::operator<=(RationalNumber<T> num) {
+  T f, s;
+  f = this->numerator * num.denominator;
+  s = num.numerator * this->denominator;
+  if (f <= s) {
     return 1;
   } else {
     return 0;
