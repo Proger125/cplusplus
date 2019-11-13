@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\ReversePolish\ReversePolish\Source.cpp(20,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\ReversePolish\ReversePolish\Source.cpp(34,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\ReversePolish\ReversePolish\Source.cpp(37,21): warning C4018:  <: несоответствие типов со знаком и без знака
+  ReversePolish.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\ReversePolish\Debug\ReversePolish.exe

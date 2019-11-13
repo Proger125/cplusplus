@@ -1,41 +1,25 @@
-#include <cmath>
+#include <cstdlib>
 #include <iostream>
+#include <map>
 using namespace std;
 
 int main() {
-  int n, m, k = 1;
-  cin >> n >> m;
-  int a[100][100];
+  int n;
+  map<string, string> m1;
+  map<string, string> m2;
+  string word;
+  cin >> n;
   for (int i = 0; i < n; i++) {
-    for (int j = 0; j < m; j++) {
-      if (i % 2 == 0) {
-        if (j % 2 == 0) {
-          a[i][j] = k;
-          k++;
-        } else {
-          a[i][j] = 0;
-		}
-      } else {
-        if (j % 2 == 0) {
-          a[i][j] = 0;
-        } else {
-          a[i][j] = k;
-          k++;
-		}
-	  }
-	}
+    string first = "", second = "";
+    cin >> first >> second;
+    m1.insert(make_pair(first, second));
+    m2.insert(make_pair(second, first));
   }
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < m; j++) {
-      if (a[i][j] < 10) {
-        cout << "   " << a[i][j];
-      } else if (a[i][j] < 100) {
-        cout << "  " << a[i][j];
-      } else {
-        cout << " " << a[i][j];
-      }
-    }
-    cout << endl;
+  cin >> word;
+  if (m1[word] == "") {
+    cout << m2[word];
+  } else {
+    cout << m1[word];
   }
   return 0;
 }
