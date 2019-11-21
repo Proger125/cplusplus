@@ -1447,7 +1447,6 @@ AssertionResult CmpHelperEQ(const char* lhs_expression,
 
   return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
 }
-
 // With this overloaded version, we allow anonymous enums to be used
 // in {ASSERT|EXPECT}_EQ when compiled with gcc 4, as anonymous enums
 // can be implicitly cast to BiggestInt.

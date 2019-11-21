@@ -1,8 +1,8 @@
 ﻿  Source.cpp
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(59,23): warning C4018:  <: несоответствие типов со знаком и без знака
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(61,56): warning C4244:  +=: преобразование "__int64" в "int", возможна потеря данных
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(86,21): warning C4018:  <: несоответствие типов со знаком и без знака
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(104,21): warning C4018:  <: несоответствие типов со знаком и без знака
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(113,21): warning C4018:  <: несоответствие типов со знаком и без знака
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(125,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(59,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(61,56): warning C4244: +=: преобразование "__int64" в "int", возможна потеря данных
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(86,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(104,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(113,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\up-07\Header.h(125,21): warning C4018: <: несоответствие типов со знаком и без знака
   up-07.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\up-07\Debug\up-07.exe

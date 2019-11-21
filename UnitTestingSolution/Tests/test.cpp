@@ -1,108 +1,77 @@
+#include "gtest/gtest.h"
 #include "pch.h"
 #include "Header.h"
-#include "gtest/gtest.h"
 
 using namespace std;
 
-TEST(RationalNumberTest, DivisionTest) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(1, 2);
+struct RationalNumberTestFixture : public ::testing::Test {
+ public:
+  RationalNumber<int> first;
+  RationalNumber<int> second;
+  RationalNumber<int> zero;
+  void SetUp() {
+    first = {1, 2};
+    second = {1, 2};
+    zero = {0, 1};
+  }
+  void TearDown() {
+    // Something
+  }
+};
+TEST_F(RationalNumberTestFixture, DivisionTest) {
   RationalNumber<int> exception(1, 1);
-  RationalNumber<int> actual = first / second;
-  EXPECT_TRUE(actual == exception);
+  EXPECT_TRUE(first / second == exception);
 }
-TEST(RationalNumberTest, DivisionTest2) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(3, 2);
-  RationalNumber<int> exception(1, 3);
-  RationalNumber<int> actual = first / second;
-  EXPECT_TRUE(actual == exception);
-}
-TEST(RationalNumberTest, DivisionTest3) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(0, 2);
+TEST_F(RationalNumberTestFixture, DivisionTest2) {
   RationalNumber<int> exception(0, 0);
-  RationalNumber<int> actual = first / second;
-  EXPECT_TRUE(actual == exception);
+  EXPECT_TRUE(first / zero == exception);
 }
-TEST(RationalNumberTest, SumTest) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(3, 1);
-  RationalNumber<int> exception(7, 2);
-  RationalNumber<int> actual = first + second;
-  EXPECT_TRUE(actual == exception);
+TEST_F(RationalNumberTestFixture, SumTest) {
+  RationalNumber<int> exception(1, 1);
+  EXPECT_TRUE(first + second == exception);
 }
-TEST(RationalNumberTest, ResTest) {
-  RationalNumber<int> first(5, 2);
-  RationalNumber<int> second(1, 4);
-  RationalNumber<int> exception(9, 4);
-  RationalNumber<int> actual = first - second;
-  EXPECT_TRUE(actual == exception);
+TEST_F(RationalNumberTestFixture, ResTest) {
+  RationalNumber<int> exception(0, 1);
+  EXPECT_TRUE(first - second == exception);
 }
-TEST(RationalNumberTest, MultTest) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(3, 1);
-  RationalNumber<int> exception(3, 2);
-  RationalNumber<int> actual = first * second;
-  EXPECT_TRUE(actual == exception);
+TEST_F(RationalNumberTestFixture, MultTest) {
+  RationalNumber<int> exception(1, 4);
+  EXPECT_TRUE(first * second == exception);
 }
-TEST(RationalNumberTest, IncrTest) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> exception(3, 2);
-  RationalNumber<int> actual = ++first;
-  EXPECT_TRUE(actual == exception);
+TEST_F(RationalNumberTestFixture, IncrTest) {
+  RationalNumber<int> exception(3,2);
+  EXPECT_TRUE(++first == exception);
 }
-TEST(RationalNumberTest, DectTest) {
-  RationalNumber<int> first(5, 2);
-  RationalNumber<int> exception(3, 2);
-  RationalNumber<int> actual = --first;
-  EXPECT_TRUE(actual == exception);
+TEST_F(RationalNumberTestFixture, DectTest) {
+  RationalNumber<int> exception(-1, 2);
+  EXPECT_TRUE(--first == exception);
 }
-TEST(RationalNumberTest, MinTest) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(3, 1);
-  EXPECT_TRUE(first < second);
+TEST_F(RationalNumberTestFixture, EqualTest) {
+  EXPECT_TRUE(first == second);
 }
-TEST(RationalNumberTest, MaxTest) {
-  RationalNumber<int> first(8, 2);
-  RationalNumber<int> second(3, 1);
-  EXPECT_TRUE(first > second);
-}
-TEST(RationalNumberTest, MinEqualTest) {
-  RationalNumber<int> first(3, 1);
-  RationalNumber<int> second(3, 1);
+TEST_F(RationalNumberTestFixture, MinEqualTest) {
   EXPECT_TRUE(first <= second);
 }
-TEST(RationalNumberTest, MaxEqualTest) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(1, 2);
+TEST_F(RationalNumberTestFixture, MaxEqualTest) {
   EXPECT_TRUE(first >= second);
 }
-TEST(RationalNumberTest, SumEqualTest) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(3, 1);
-  RationalNumber<int> exception(7, 2);
+TEST_F(RationalNumberTestFixture, SumEqualTest) {
+  RationalNumber<int> exception(1, 1);
   first += second;
   EXPECT_TRUE(first == exception);
 }
-TEST(RationalNumberTest, RelEqualTest) {
-  RationalNumber<int> first(7, 2);
-  RationalNumber<int> second(3, 1);
-  RationalNumber<int> exception(1, 2);
+TEST_F(RationalNumberTestFixture, RelEqualTest) {
+  RationalNumber<int> exception(0, 1);
   first -= second;
   EXPECT_TRUE(first == exception);
 }
-TEST(RationalNumberTest, MultEqualTest) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(3, 1);
-  RationalNumber<int> exception(3, 2);
+TEST_F(RationalNumberTestFixture, MultEqualTest) {
+  RationalNumber<int> exception(1, 4);
   first *= second;
   EXPECT_TRUE(first == exception);
 }
-TEST(RationalNumberTest, DivEqualTest) {
-  RationalNumber<int> first(1, 2);
-  RationalNumber<int> second(3, 1);
-  RationalNumber<int> exception(1, 6);
+TEST_F(RationalNumberTestFixture, DivEqualTest) {
+  RationalNumber<int> exception(1, 1);
   first /= second;
   EXPECT_TRUE(first == exception);
 }
