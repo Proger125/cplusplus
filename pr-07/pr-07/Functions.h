@@ -17,7 +17,7 @@ class RationalNumber {
   RationalNumber operator-=(RationalNumber<T> num);
   RationalNumber operator*=(RationalNumber<T> num);
   RationalNumber operator/=(RationalNumber<T> num);
-  ostream operator<<(ostream &fout);
+  ostream& operator<<(ostream &fout);
   RationalNumber operator+(RationalNumber<T> num);
   RationalNumber operator-(RationalNumber<T> num);
   RationalNumber operator*(RationalNumber<T> num);

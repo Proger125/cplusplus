@@ -1,7 +1,8 @@
 ﻿  Main.cpp
-C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Functions.h(42,1): warning C4812:  устаревший стиль объявления: используйте "Program<T>::Program" как альтернативу
-C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Functions.h(42,1): warning C4812:  устаревший стиль объявления: используйте "Program<int>::Program" как альтернативу
-C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Functions.h(42): message :  во время компиляции функции-члена класс шаблон "Program<int>::Program(RationalNumber<int>,RationalNumber<int>)"
-C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Main.cpp(7): message :  выполняется компиляция ссылки на экземпляр шаблон функции "Program<int>::Program(RationalNumber<int>,RationalNumber<int>)"
-C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Main.cpp(7): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "Program<int>"
-  pr-07.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\Debug\pr-07.exe
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Functions.h(44,66): warning C4812: устаревший стиль объявления: используйте "Program<T>::Program" как альтернативу
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Functions.h(44,66): warning C4812: устаревший стиль объявления: используйте "Program<int>::Program" как альтернативу
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Functions.h(44): message : во время компиляции функции-члена класс шаблон "Program<int>::Program(RationalNumber<int>,RationalNumber<int>)"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Main.cpp(7): message : выполняется компиляция ссылки на экземпляр шаблон функции "Program<int>::Program(RationalNumber<int>,RationalNumber<int>)"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\pr-07\Main.cpp(7): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Program<int>"
+Main.obj : error LNK2019: ссылка на неразрешенный внешний символ "class std::basic_ostream<char,struct std::char_traits<char> > __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class RationalNumber<int> &)" (??6@YA?AV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@AAV?$RationalNumber@H@@@Z) в функции "public: void __thiscall Program<int>::ShowThePower(void)" (?ShowThePower@?$Program@H@@QAEXXZ)
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-07\Debug\pr-07.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

@@ -1,7 +1,7 @@
 #include "Functions.h"
 
 int main() {
-  RationalNumber<int> first, second, result;
+  RationalNumber<int> first, second;
   InputNumber(first);
   InputNumber(second);
   Program<int> prog(first, second);

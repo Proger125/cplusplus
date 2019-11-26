@@ -3,5 +3,5 @@
 int main() {
   Program myprog;
   system("pause");
-  return 0;
+  return myprog.Main();
 }

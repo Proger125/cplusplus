@@ -44,7 +44,12 @@ class Program {
   vector<pair<string, map<int, long long int> > > CalcWorldRegionPopulation(
       set<string> &UniqueRegion);
   void WriteWorldRegionPopulation();
+  int Main();
 };
+int Program::Main() {
+	WriteWorldRegionPopulation();
+	return 0;
+}
 class WorldRegionPopulation {
  public:
   string region;
@@ -79,7 +84,7 @@ Program::Program() {
   fin.close();
 }
 Program::~Program() {
-  WriteWorldRegionPopulation();
+  
 }
 vector<WorldCountry> Program::ChooseCountryByRegion(string reg) {
   vector<WorldCountry> res;
