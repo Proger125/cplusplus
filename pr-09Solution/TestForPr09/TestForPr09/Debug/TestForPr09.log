@@ -1,0 +1,18 @@
+﻿  test.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\TestForPr09\TestForPr09\test.cpp(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\StackOnList.h(139,1): warning C4521: "stackInList<std::string>": заданы несколько конструкторов копий
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "stackInList<std::string>"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\StackOnList.h(139,1): warning C4522: stackInList<std::string>: заданы несколько операторов присваивания
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(21,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(58,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(70,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\StackOnList.h(139,1): warning C4521: "stackInList<char>": заданы несколько конструкторов копий
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\ReversePolish.h(38): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "stackInList<char>"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\StackOnList.h(139,1): warning C4522: stackInList<char>: заданы несколько операторов присваивания
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\ReversePolish.h(39,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\ReversePolish.h(76,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\ReversePolish.h(88,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\ReversePolish.h(20): warning C4715: priority: значение возвращается не при всех путях выполнения
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(16): warning C4715: priority_f: значение возвращается не при всех путях выполнения
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\ReversePolish.h(34): warning C4715: Calc: значение возвращается не при всех путях выполнения
+  TestForPr09.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\TestForPr09\Debug\TestForPr09.exe

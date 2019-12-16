@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\Sales\Coder\Source.cpp(15,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\Sales\Coder\Source.cpp(90,28): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\Lenovo\Documents\GitHub\cplusplus\Sales\Coder\Source.cpp(135,21): warning C4018: <: несоответствие типов со знаком и без знака
+  Coder.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\Sales\Debug\Coder.exe

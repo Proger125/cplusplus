@@ -13,7 +13,6 @@ struct TNode {
     next = nextNode;
   }
 };
-
 template <typename TElement>
 class stackInList {
  private:
@@ -25,7 +24,64 @@ class stackInList {
     sizeOfStack = 0;
     currentTop = NULL;
   }
-
+  stackInList(const stackInList &stack) {
+    currentTop = NULL;
+    TNode<TElement> *top = stack.currentTop;
+    TElement a[100000];
+    int i = 0;
+    while (stack.currentTop != nullptr) {
+      a[i] = stack.currentTop->data;
+      i++;
+      stack.currentTop = stack.currentTop->next;
+    }
+    for (int j = i - 1; j >= 0; j--) {
+      TNode<TElement> *node = new TNode<TElement>(a[j], currentTop);
+      sizeOfStack++;
+      currentTop = node;
+    }
+    stack.currentTop = top;
+  }
+  stackInList(stackInList &stack) {
+    TElement a[100000];
+    int i = 0;
+    while (!stack.IsEmpty()) {
+      a[i] = stack.pop();
+      i++;
+    }
+    for (int j = i - 1; j >= 0; j--) {
+      this->push(a[i]);
+    }
+  }
+  stackInList operator=(const stackInList &stack) {
+    currentTop = NULL;
+    TNode<TElement> *top = stack.currentTop;
+    TElement a[100000];
+    int i = 0;
+    while (stack.currentTop != nullptr) {
+      a[i] = stack.currentTop->data;
+      i++;
+      stack.currentTop = stack.currentTop->next;
+    }
+    for (int j = i - 1; j >= 0; j--) {
+      TNode<TElement> *node = new TNode<TElement>(a[j], currentTop);
+      sizeOfStack++;
+      currentTop = node;
+    }
+    stack.currentTop = top;
+    return *this;
+  }
+  stackInList operator=(stackInList &stack) {
+    TElement a[100000];
+    int i = 0;
+    while (!stack.IsEmpty()) {
+      a[i] = stack.pop();
+      i++;
+    }
+    for (int j = i - 1; j >= 0; j--) {
+      this->push(a[i]);
+    }
+    return *this;
+  }
   ~stackInList() {
     while (size()) pop();
   }
@@ -51,31 +107,33 @@ class stackInList {
   }
   TElement top() { return currentTop->data; }
   unsigned int size() { return sizeOfStack; }
-bool operator==(stackInList stack) {
-    if (stack.size() == this->size()) {
-      vector<TElement> v1;
-      vector<TElement> v2;
-      int k = 0;
-      while (stack.size() != 0) {
-        TElement a = stack.top();
-        TElement b = this->top();
-        if (stack.pop() != this->pop()) {
-          k = 1;
-          v1.push_back(a);
-          v2.push_back(b);
-          break;
+  bool operator==(stackInList &stack) {
+    if (this->size() == stack.size()) {
+      TNode<TElement> *top_this = this->currentTop;
+      TNode<TElement> *top_stack = stack.currentTop;
+      while (this->currentTop != nullptr) {
+        if (this->currentTop->data != stack.currentTop->data) {
+          this->currentTop = top_this;
+          stack.currentTop = top_stack;
+          return false;
         }
-        v1.push_back(a);
-        v2.push_back(b);
-      }
-
-        if (k == 1) {
-        return false;
-        } else {
+        if (this->currentTop->next == nullptr) {
+          this->currentTop = top_this;
+          stack.currentTop = top_stack;
           return true;
-		}
+        } else {
+          this->currentTop = this->currentTop->next;
+          stack.currentTop = stack.currentTop->next;
+        }
+      }
     } else {
       return false;
     }
+  }
+  bool operator!=(stackInList &stack) {
+    if (*this == stack) {
+      return false;
+    }
+    return true;
   }
 };

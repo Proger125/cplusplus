@@ -128,6 +128,8 @@
     <ClCompile Include="StackOnList.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calcule.h" />
+    <ClInclude Include="ReversePolish.h" />
     <ClInclude Include="StackOnArray.h" />
     <ClInclude Include="StackOnList.h" />
   </ItemGroup>

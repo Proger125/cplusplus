@@ -17,7 +17,10 @@ class RationalNumber {
   RationalNumber operator-=(RationalNumber<T> num);
   RationalNumber operator*=(RationalNumber<T> num);
   RationalNumber operator/=(RationalNumber<T> num);
-  ostream& operator<<(ostream &fout);
+  friend ostream &operator<<(ostream &fout, RationalNumber<T> &num) {
+    fout << num.numerator << " / " << num.denominator << endl;
+    return fout;
+  }
   RationalNumber operator+(RationalNumber<T> num);
   RationalNumber operator-(RationalNumber<T> num);
   RationalNumber operator*(RationalNumber<T> num);
@@ -29,6 +32,8 @@ class RationalNumber {
   bool operator>=(RationalNumber<T> num);
   bool operator<=(RationalNumber<T> num);
   RationalNumber operator++();
+  RationalNumber operator++();
+  
   RationalNumber operator--();
 };
 template <class T>
@@ -143,11 +148,6 @@ RationalNumber<T> RationalNumber<T>::operator/=(RationalNumber<T> num) {
   this->numerator = result.numerator;
   this->denominator = result.denominator;
   return result;
-}
-template <typename T>
-ostream &operator<<(ostream &fout, RationalNumber<T> &num) {
-  fout << num.numerator << " / " << num.denominator << endl;
-  return fout;
 }
 template <typename T>
 RationalNumber<T> RationalNumber<T>::operator+(RationalNumber<T> num) {
