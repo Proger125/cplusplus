@@ -10,6 +10,8 @@ template <typename T>
 class BiDirectionalList {
   struct Node {
     T value;
+
+   private:
     Node* next;
     Node* prev;
     Node(T data, Node* nextNode, Node* prevNode) {
@@ -17,6 +19,7 @@ class BiDirectionalList {
       next = nextNode;
       prev = prevNode;
     }
+    friend class BiDirectionalList;
   };
 
  public:
@@ -122,7 +125,6 @@ T BiDirectionalList<T>::PopFront() {
     T res = head->value;
     Node* node = head;
     head = head->next;
-    head->prev = NULL;
     delete node;
     size--;
     return res;

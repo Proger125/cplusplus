@@ -21,35 +21,34 @@ vector<string> ToReversePolishForm(string str) {
   for (int i = 0; i < str.size(); i++) {
     if ((str[i] >= '0' && str[i] <= '9') || str[i] == '.') {
       num += str[i];
-      continue;
     }
     if (str[i] == '(') {
       result.push_back(num);
       num = "";
       stack.push(f);
       f = "";
-      continue;
     }
     if (str[i] == ')') {
       result.push_back(num);
       num = "";
       result.push_back(stack.pop());
-      continue;
     }
     if (str[i] == ',') {
       result.push_back(num);
       num = "";
-      continue;
     }
     if (str[i] >= 'a' && str[i] <= 'z') {
       f += str[i];
-      continue;
     }
     if (str[i] == '|') {
       string a;
       a += '|';
       stack.push(a);
-	}
+    }
+    if (i == str.size() - 1) {
+      result.push_back(num);
+      num = "";
+    }
   }
   while (!stack.IsEmpty()) {
     result.push_back(stack.pop());

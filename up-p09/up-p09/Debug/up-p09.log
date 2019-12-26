@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-p09\up-p09\Programm.h(30): warning C4715: Do: значение возвращается не при всех путях выполнения
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-p09\up-p09\Containers.h(134): warning C4715: BiDirectionalList<Shape *>::PopFront: значение возвращается не при всех путях выполнения
+  up-p09.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\up-p09\Debug\up-p09.exe

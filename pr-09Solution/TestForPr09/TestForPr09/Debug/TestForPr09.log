@@ -4,8 +4,8 @@ C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\StackOnList.h(139
 C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "stackInList<std::string>"
 C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\StackOnList.h(139,1): warning C4522: stackInList<std::string>: заданы несколько операторов присваивания
 C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(21,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(58,12): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(70,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(57,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\Calcule.h(69,21): warning C4018: <: несоответствие типов со знаком и без знака
 C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\StackOnList.h(139,1): warning C4521: "stackInList<char>": заданы несколько конструкторов копий
 C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\ReversePolish.h(38): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "stackInList<char>"
 C:\Users\Lenovo\Documents\GitHub\cplusplus\pr-09Solution\pr-09\StackOnList.h(139,1): warning C4522: stackInList<char>: заданы несколько операторов присваивания

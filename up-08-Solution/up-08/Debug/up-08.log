@@ -1,13 +1,4 @@
 ﻿  Main.cpp
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Containers.h(58,1): warning C4521: "BiDirectionalList<T>": заданы несколько конструкторов копий
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Containers.h(58,1): warning C4521:         with
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Containers.h(58,1): warning C4521:         [
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Containers.h(58,1): warning C4521:             T=int
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Containers.h(58,1): warning C4521:         ]
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Stack.h(13): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "BiDirectionalList<T>"
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Stack.h(13): message :         with
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Stack.h(13): message :         [
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Stack.h(13): message :             T=int
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Stack.h(13): message :         ]
-C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Main.cpp(10): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Stack<int>"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Containers.h(61,1): warning C4521: "BiDirectionalList<int>": заданы несколько конструкторов копий
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\up-08\Main.cpp(10): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "BiDirectionalList<int>"
   up-08.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\up-08-Solution\Debug\up-08.exe

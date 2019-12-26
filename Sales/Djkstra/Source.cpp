@@ -9,15 +9,15 @@ using namespace std;
 
 int main() {
   int a[100][100];
-  int prev[100][100];
-  vector<int> path;
+  int d[100];
+  int v[100];
   int begin_index, end_index;
   int n, m;
+  int minindex, min, temp;
   cin >> n >> m;
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
       a[i][j] = 1000000;
-      prev[i][j] = i;
       if (i == j) {
         a[i][j] = 0;
       }
@@ -30,27 +30,60 @@ int main() {
     cin >> j >> k >> val;
     a[j - 1][k - 1] = val;
   }
-  for (int k = 0; k < n; k++) {
+  for (int i = 0; i < n; i++) {
+    d[i] = 100000;
+    v[i] = 1;
+  }
+  d[begin_index - 1] = 0;
+  do {
+    minindex = 100000;
+    min = 100000;
     for (int i = 0; i < n; i++) {
-      for (int j = 0; j < n; j++) {
-        if (a[i][k] < 1000000 && a[k][j] < 1000000 &&
-            a[i][k] + a[k][j] < a[i][j]) {
-          a[i][j] = a[i][k] + a[k][j];
-          prev[i][j] = prev[k][j];
-        }
+      if (v[i] == 1 && d[i] < min) {
+        min = d[i];
+        minindex = i;
       }
     }
-  }
-  if (a[begin_index - 1][end_index - 1] != 1000000) {
-    cout << a[begin_index - 1][end_index - 1] << endl;
-    int f = 1;
-    while (f != end_index) {
-      cout << prev[begin_index - 1][f] + 1 << " ";
-      f++;
+    if (minindex != 100000) {
+      for (int i = 0; i < n; i++) {
+        if (a[minindex][i] > 0) {
+          temp = min + a[minindex][i];
+          if (temp < d[i]) {
+            d[i] = temp;
+		  }
+        }
+      }
+      v[minindex] = 0;
     }
-    cout << end_index << " ";
-  } else
+  } while (minindex < 100000);
+
+
+  if (d[end_index - 1]!= 100000) {
+    cout << d[end_index - 1] << endl;
+    int ver[100];
+    int end = end_index - 1;
+    ver[0] = end_index;
+    int k = 1;
+    int weight = d[end];
+    while (end != begin_index - 1) {
+      for (int i = 0; i < n; i++) {
+        if (a[i][end] != 0) {
+          int temp = weight - a[i][end];
+          if (temp == d[i]) {
+            weight = temp;
+            end = i;
+            ver[k] = i + 1;
+            k++;
+		  }
+		}
+	  }
+    }
+    for (int i = k - 1; i >= 0; i--) {
+      cout << ver[i] << " ";
+	}
+  } else {
     cout << 0 << endl;
+  }
   system("pause");
   return 0;
 }

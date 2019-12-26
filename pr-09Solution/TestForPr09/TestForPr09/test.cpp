@@ -36,3 +36,8 @@ TEST(Testing_Form, SecondTest) {
   double result = CalculateForm(ToReversePolishForm(str));
   EXPECT_EQ(15, result);
 }
+TEST(Testing_Form, ThirdTest) {
+  string str = "4";
+  double result = CalculateReversePolish(ToReversePolish(str));
+  EXPECT_EQ(4, result);
+}

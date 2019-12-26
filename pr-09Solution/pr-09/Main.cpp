@@ -7,7 +7,8 @@ using namespace std;
 int main() {
   //vector<string> v = ToReversePolish();
   //cout << CalculateReversePolish(v) << endl;
-  vector<string> v = ToReversePolishForm();
+  string str = "4";
+  vector<string> v = ToReversePolishForm(str);
   cout << CalculateForm(v);
   system("pause");
   return 0;
