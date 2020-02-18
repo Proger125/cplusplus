@@ -1,0 +1,128 @@
+﻿  test.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(2,25): error C2653: SimpleStream: не является именем класса или пространства имен
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(2,34): error C2270: isEnd: модификаторы недопустимы для функций, не являющихся членами
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(3,7): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(3,19): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(8,24): error C2653: SimpleStream: не является именем класса или пространства имен
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(8,33): error C2270: peek: модификаторы недопустимы для функций, не являющихся членами
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(8,42): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(8,46): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(9,31): error C2653: SimpleStream: не является именем класса или пространства имен
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(11,15): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(12,13): error C3861: out_of_range: идентификатор не найден
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(14,7): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(16,24): error C2061: синтаксическая ошибка: идентификатор "out_of_range"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(16,5): error C2310: в блоках catch должен быть указан один тип
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(17,5): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(17,16): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20,13): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20,13): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20,32): error C2825: SimpleStream: должен представлять класс или пространство имен с последующим "::"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20,29): error C2510: SimpleStream: выражение слева от "::" должно быть классом, структурой или объединением
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20,41): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20,41): error C2059: синтаксическая ошибка: {
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20,41): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20,41): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(25,13): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(25,13): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(25,13): error C2086: int SimpleStream: переопределение
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20): message : см. объявление "SimpleStream"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(25,32): error C2825: SimpleStream: должен представлять класс или пространство имен с последующим "::"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(25,29): error C2510: SimpleStream: выражение слева от "::" должно быть классом, структурой или объединением
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(25,42): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(25,42): error C2059: синтаксическая ошибка: {
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(25,42): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(25,42): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(34,23): error C2825: SimpleStream: должен представлять класс или пространство имен с последующим "::"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(34,20): error C2510: SimpleStream: выражение слева от "::" должно быть классом, структурой или объединением
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(38,5): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(39,12): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(39,16): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(42,25): error C2825: SimpleStream: должен представлять класс или пространство имен с последующим "::"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(42,20): error C2510: SimpleStream: выражение слева от "::" должно быть классом, структурой или объединением
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(43,3): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(44,3): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(46,37): error C2825: SimpleStream: должен представлять класс или пространство имен с последующим "::"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(46,20): error C2510: SimpleStream: выражение слева от "::" должно быть классом, структурой или объединением
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(48,5): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(49,5): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(51,5): error C2065: string: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(51,12): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "s"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(51,12): error C2065: s: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(52,18): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(52,32): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(53,7): error C2065: s: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(53,12): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(55,5): error C2065: position: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(56,5): error C2065: str: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(56,11): error C2065: s: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(59,13): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(59,13): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(59,13): error C2086: int SimpleStream: переопределение
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20): message : см. объявление "SimpleStream"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(59,34): error C2825: SimpleStream: должен представлять класс или пространство имен с последующим "::"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(59,29): error C2510: SimpleStream: выражение слева от "::" должно быть классом, структурой или объединением
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(59,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(59,37): error C2059: синтаксическая ошибка: {
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(59,37): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(59,37): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(70,13): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(70,13): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(70,13): error C2086: int SimpleStream: переопределение
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(20): message : см. объявление "SimpleStream"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(70,36): error C2825: SimpleStream: должен представлять класс или пространство имен с последующим "::"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(70,29): error C2510: SimpleStream: выражение слева от "::" должно быть классом, структурой или объединением
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(70,45): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(70,45): error C2059: синтаксическая ошибка: {
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(70,45): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(70,45): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(82,8): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(82,8): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(82,30): error C2065: out: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(82,49): error C2065: stream: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(82,55): error C2473: operator <<: выглядит как определение функции, но без списка параметров.
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(82,55): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(82,55): error C2365: operator <<: переопределение; предыдущим определением было "функция"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1\build\native\include\gtest\gtest-message.h(59): message : см. объявление "operator <<"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(82,57): error C2448: <<: вероятно, инициализатор, использующий стиль функции, является определением функции
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(91,8): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(91,8): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(91,30): error C2065: in: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(91,48): error C2065: stream: необъявленный идентификатор
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(91,54): error C2473: operator >>: выглядит как определение функции, но без списка параметров.
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(91,54): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(91,56): error C2448: >>: вероятно, инициализатор, использующий стиль функции, является определением функции
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(37,17): error C2872: ostream: неоднозначный символ
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(82,1): message : может быть "int ostream"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\iosfwd(216,7): message : или       "std::ostream"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(37,17): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(37,17): error C2433: ostream: "friend" не разрешается для объявлений данных
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(37,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(37,65): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(38,17): error C2872: istream: неоднозначный символ
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(91,1): message : может быть "int istream"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\iosfwd(215,7): message : или       "std::istream"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(38,17): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(38,17): error C2433: istream: "friend" не разрешается для объявлений данных
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(38,17): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(38,64): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\NumberStream.cpp(2,25): error C2653: NumberStream: не является именем класса или пространства имен
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\NumberStream.cpp(6,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\NumberStream.cpp(7,19): error C2352: SimpleStream::put: недопустимый вызов нестатической функции-члена
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(30): message : см. объявление "SimpleStream::put"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\NumberStream.cpp(10,23): error C2653: NumberStream: не является именем класса или пространства имен
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\NumberStream.cpp(11,26): error C2352: SimpleStream::get: недопустимый вызов нестатической функции-члена
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(32): message : см. объявление "SimpleStream::get"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\NumberStream.cpp(15,23): error C2352: SimpleStream::get: недопустимый вызов нестатической функции-члена
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.h(32): message : см. объявление "SimpleStream::get"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\Test_for_exam\test.cpp(6,16): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "testing"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\Test_for_exam\test.cpp(6,23): error C2882: testing: недопустимое использование идентификатора пространства имен в выражении
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\Test_for_exam\test.cpp(7,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\Test_for_exam\test.cpp(8,12): error C2882: testing: недопустимое использование идентификатора пространства имен в выражении
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\Test_for_exam\test.cpp(10,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\Test_for_exam\test.cpp(11,5): error C2882: testing: недопустимое использование идентификатора пространства имен в выражении
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\Test_for_exam\test.cpp(11,5): error C2660: testing::internal::EqHelper<false>::Compare: функция не принимает 3 аргументов
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1\build\native\include\gtest\gtest.h(1481,26): message : см. объявление "testing::internal::EqHelper<false>::Compare"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\Test_for_exam\test.cpp(11,5): error C2512: testing::AssertionResult: нет подходящего конструктора по умолчанию
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1\build\native\include\gtest\gtest.h(281,18): message : см. объявление "testing::AssertionResult"
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\Test_for_exam\Test_for_exam\test.cpp(18,21): warning C4018: <: несоответствие типов со знаком и без знака

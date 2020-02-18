@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-10_Solution\up-10\StackOnList.h(44,1): warning C4114: множественное использование одного и того же квалификатора типа
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-10_Solution\up-10\StackOnList.h(65): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "StackOnList<T>"
+  up-10.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\up-10_Solution\Debug\up-10.exe

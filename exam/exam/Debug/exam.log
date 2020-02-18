@@ -1,0 +1,8 @@
+﻿  main.cpp
+  NumberStream.cpp
+  SimpleStream.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\NumberStream.cpp(6,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(52,30): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\exam\SimpleStream.cpp(86,34): warning C4018: <=: несоответствие типов со знаком и без знака
+  exam.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\exam\Debug\exam.exe

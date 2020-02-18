@@ -1,0 +1,11 @@
+﻿  MyString.cpp
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\up-11\MyString.cpp(25,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\up-11\MyString.cpp(73,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\up-11\MyString.cpp(90,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\up-11\MyString.cpp(109,17): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\up-11\MyString.cpp(125,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\up-11\MyString.cpp(145,17): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\up-11\MyString.cpp(146,22): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\up-11\MyString.cpp(155,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\up-11\MyString.cpp(181,12): warning C4018: <: несоответствие типов со знаком и без знака
+  up-11.vcxproj -> C:\Users\Lenovo\Documents\GitHub\cplusplus\up-11_Solution\Debug\up-11.exe
