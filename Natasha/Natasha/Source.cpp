@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <iostream>
 #include <fstream>
+#include <iostream>
 using namespace std;
 struct Node {
   int val;
@@ -70,7 +70,7 @@ class Tree {
     ofstream fout("output.txt");
     Node *nroot = t.root;
     t.preOrderTravers(t.root, fout);
-	    fout.close();
+    fout.close();
   };
   void preOrderTravers(Node *root, ofstream &fout) {
     if (root != nullptr) {
@@ -78,7 +78,6 @@ class Tree {
       preOrderTravers(root->left, fout);
       preOrderTravers(root->right, fout);
     }
-
   }
 
  private:
@@ -96,10 +95,24 @@ void ReadData(Tree &t) {
   }
   fin.close();
 }
-int main() {
-  Tree t;
-  ReadData(t);
-  Go(t);
-  system("pause");
-  exit(0);
+int c = 0;
+void Function(int a, int b) {
+  if (a == 0) {
+    c++;
+  } else {
+    while (b < a) {
+      b++;
+      Function(a - b, b);
+    }
+  }
 }
+
+  int main() {
+    // Tree t;
+    // ReadData(t);
+    // Go(t);
+    Function(50, 0);
+    cout << c << endl;
+    system("pause");
+    return 0;
+  }

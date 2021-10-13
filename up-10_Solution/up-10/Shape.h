@@ -21,7 +21,7 @@ class Shape {
   void NewId() { ShapeId_ = ShapeCount_; }
   static void IncreaseShareCount() { ShapeCount_++; }
   Shape() {
-    IncreaseShareCount();
+    IncreaseShapeCount();
     NewId();
   }
   Shape(string new_type) {
